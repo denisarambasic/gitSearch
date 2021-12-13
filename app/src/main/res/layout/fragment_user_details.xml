@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".user_details_screen.UserDetailsFragment">
+
+        <ImageView
+            android:id="@+id/authorImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Ime authora -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Author name:" />
+            <TextView
+                android:id="@+id/authorNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author Ime" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/openUserDetailInBrowserButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open user detail page in browser" />
+
+    </LinearLayout>
+</layout>
